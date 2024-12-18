@@ -1,0 +1,17 @@
+footer{
+    background-color: nth($palette, 1);
+    color: nth($textColor, 2);
+    img{
+        max-width: 3em;
+    }
+    a{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        text-decoration: underline;
+        color:  #3366BB;
+    }
+    #copy{
+        color: nth($highlight, 2);
+    }
+}

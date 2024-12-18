@@ -1,0 +1,35 @@
+aside{
+    display: none;
+    border-right: solid nth($palette, 1) .01em;
+    ul{
+        padding-left: 0;
+        li {
+            &:has(a.aqui){
+                background: nth($highlight, 2);
+                color: nth($textColor, 1);
+                text-decoration: underline;
+                font-weight: bold;
+            }
+            &:hover {
+                background: nth($highlight, 2);
+                transition: all .5s ease-in;
+            }
+    
+            a{
+                color: nth($textColor, 1);
+                text-decoration: underline;
+                text-decoration-color: transparent;
+                }
+            &:hover a{
+                color: nth($textColor, 1);
+                text-decoration-color: nth($textColor, 1);
+                transition: all .5s ease-in;
+            }
+        }
+    }
+    
+    @include tablet{
+        padding: .5em;
+        display: block;
+    }
+}

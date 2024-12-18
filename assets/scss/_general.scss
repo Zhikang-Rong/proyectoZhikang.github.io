@@ -1,0 +1,38 @@
+body {
+    font-family: arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+li {
+    padding: .5em;
+}
+main{
+    flex: 1;
+    background-color: white;
+}
+article {
+    padding: .5em;
+}
+
+
+
+@include tablet{
+    #standard{
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        gap: .5em;
+    }
+}

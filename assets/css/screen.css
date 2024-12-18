@@ -1,0 +1,391 @@
+@charset "UTF-8";
+@media screen {
+  /* las animaciones ocurren cuando haces click sobre el logo */
+  /* esta animación ocurre el 90% de las veces*/
+  @keyframes twitch {
+    0% {
+      transform: translate(0.1em, 0.1em) rotate(0deg);
+    }
+    10% {
+      transform: translate(-0.1em, -0.2em) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-0.3em, 0em) rotate(1deg);
+    }
+    30% {
+      transform: translate(0.3em, 0.2em) rotate(0deg);
+    }
+    40% {
+      transform: translate(0.1em, -0.1em) rotate(1deg);
+    }
+    50% {
+      transform: translate(-0.1em, 0.2em) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-0.3em, 0.1em) rotate(0deg);
+    }
+    70% {
+      transform: translate(0.3em, 0.1em) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-0.1em, -0.1em) rotate(1deg);
+    }
+    90% {
+      transform: translate(0.1em, 0.2em) rotate(0deg);
+    }
+    100% {
+      transform: translate(0.1em, -0.2em) rotate(-1deg);
+    }
+  }
+  /* esta animación ocurre el 10% de las veces */
+  @keyframes flips {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(180deg);
+    }
+    100% {
+      transform: rotateX(360deg);
+    }
+  }
+  body {
+    font-family: arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    padding: 0.5em;
+  }
+  main {
+    flex: 1;
+    background-color: white;
+  }
+  article {
+    padding: 0.5em;
+  }
+  /*generos.html*/
+  /*contacto.html*/
+  /* login.html*/
+  /* juego */
+  /* index.html y juegos por genero*/
+}
+@media screen and (min-width: 400px) {
+  #standard {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 0.5em;
+  }
+}
+@media screen {
+  header {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5em 0.5em 0em 0.5em;
+  }
+  header #titulo {
+    display: flex;
+    align-items: center;
+  }
+  header #titulo h1 {
+    display: inline-block;
+    margin: 0.1em;
+    font-size: 300%;
+  }
+  header #titulo #logo {
+    width: 3.5em;
+    height: 3.5em;
+    display: inline-block;
+  }
+  header #titulo .logo {
+    animation-name: twitch;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  header #titulo .logo2 {
+    animation-name: flips;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  header #titulo a {
+    color: white;
+  }
+  header nav {
+    color: white;
+  }
+  header nav ul {
+    padding-left: 0;
+  }
+  header nav ul li {
+    padding: 0;
+    background-color: #343a40;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.25rem 1rem;
+  }
+  header nav ul li a:hover {
+    color: white;
+    background-color: transparent;
+  }
+  header nav ul li:hover a {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.4s ease-in;
+  }
+  header nav ul li.aqui {
+    background-color: #0d6efd;
+  }
+  header #menu_mov button, header #menu_mov ul {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 400px) {
+  header #menu_mov {
+    display: none;
+  }
+}
+@media screen {
+  header #menu_desk {
+    display: none;
+  }
+}
+@media screen and (min-width: 400px) {
+  header #menu_desk {
+    display: block;
+  }
+}
+@media screen and (min-width: 700px) {
+  header #menu_desk ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    gap: 0.2em;
+  }
+}
+@media screen {
+  aside {
+    display: none;
+    border-right: solid #0d0d0d 0.01em;
+  }
+  aside ul {
+    padding-left: 0;
+  }
+  aside ul li:has(a.aqui) {
+    background: #cccccc;
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  aside ul li:hover {
+    background: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  aside ul li a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+  aside ul li:hover a {
+    color: black;
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+}
+@media screen and (min-width: 400px) {
+  aside {
+    padding: 0.5em;
+    display: block;
+  }
+}
+@media screen {
+  #generos {
+    padding-top: 1.5em;
+    padding: 0.5em;
+    flex: 1;
+  }
+  #generos ul {
+    padding-left: 0;
+  }
+  #generos ul li a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+  #generos ul li:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  #generos ul li:hover a {
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  form a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+    color: #3366BB;
+  }
+  #submit {
+    padding: 0.25em;
+    border: 0;
+    cursor: pointer;
+  }
+  #login {
+    padding: 0.5em;
+    padding-top: 1.5em;
+    flex: 1;
+  }
+  #juego {
+    background-color: white;
+    flex: 1;
+    padding: 0.5em;
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+  }
+  #juego img {
+    width: 100%;
+  }
+  #juego table {
+    width: 50%;
+  }
+  #juego button {
+    background-color: #343a40;
+    border: 0;
+    color: white;
+  }
+}
+@media screen and (min-width: 700px) {
+  #juego {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media screen {
+  #juegos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5em;
+  }
+}
+@media screen and (min-width: 400px) {
+  #juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    padding: 0.5em;
+  }
+}
+@media screen and (min-width: 700px) {
+  #juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    padding: 0.5em;
+  }
+}
+@media screen {
+  .juego {
+    box-shadow: 0em 0em 0.1em black;
+    padding: 0.5em;
+    color: black;
+    border-radius: 0.25em;
+  }
+  .juego h3 {
+    -webkit-text-decoration: solid underline transparent;
+            text-decoration: solid underline transparent;
+  }
+  .juego:hover h3 {
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  .juego:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .juego img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  .juego img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media screen {
+  .juego .precio {
+    text-align: right;
+  }
+  footer {
+    background-color: #0d0d0d;
+    color: white;
+  }
+  footer img {
+    max-width: 3em;
+  }
+  footer a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+    color: #3366BB;
+  }
+  footer #copy {
+    color: #cccccc;
+  }
+  #simpleCookieConsent {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    resize: vertical;
+    overflow: auto;
+    z-index: 999999999;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  #simpleCookieConsent .cookieConsentContainer {
+    position: absolute;
+    top: 50%;
+    left: 2em;
+    right: 2em;
+    margin: -10em auto 0;
+    padding: 1em;
+    max-width: 30em;
+    background-color: white;
+  }
+  #simpleCookieConsent .cookieConsentSelection {
+    text-align: right;
+  }
+  #simpleCookieConsent button {
+    background-color: #cccccc;
+    border: none;
+    padding: 0.25em;
+  }
+  #simpleCookieConsent button.cookieConsentAllow:hover, #simpleCookieConsent button.cookieConsentDeny:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
+  #simpleCookieConsent hr {
+    margin: 0.75em 0;
+  }
+  #simpleCookieConsent a {
+    display: inline;
+  }
+}/*# sourceMappingURL=screen.css.map */
