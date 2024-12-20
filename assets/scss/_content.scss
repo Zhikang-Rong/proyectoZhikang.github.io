@@ -91,6 +91,9 @@ form a{
         grid-template-columns: repeat(auto-fit,20em);
         padding: .5em;
     }
+    a{
+        text-decoration: none;
+    }
 }
 .juego {
     box-shadow: 0em 0em .1em black;

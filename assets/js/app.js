@@ -4,6 +4,7 @@ window.onload = function(){
   }
 
     //TERMINOS Y CONDICIONES
+    
     if(document.getElementById("submit") != null){
       document.getElementById("submit").addEventListener("click",function(){
         if(document.getElementById("politicas").checked){
@@ -14,20 +15,6 @@ window.onload = function(){
         }
     });
     }
-    
-    
-    //MENU PLEGABLE
-    
-    let pleg = document.getElementById("pleg");
-    pleg.addEventListener("click", function() {
-        
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-    });
     
 
 
@@ -80,18 +67,17 @@ function checkCookie() {
     let cookie = getCookie("tienda");
     console.log(cookie);
     console.log(document.cookie);
-    if (cookie != "") {
+    if (cookie !== "") {
         console.log("yes");
-        document.getElementById("simpleCookieConsent").style.display = "none"; 
     } else {
+        document.getElementById("simpleCookieConsent").classList.remove('hideThis');
         console.log("no");
-        document.getElementById("simpleCookieConsent").style.display = "block";
         document.getElementsByClassName("cookieConsentAllow")[0].addEventListener("click",function(){
             setCookie("tienda","hola",90);
-            location.reload();
+            document.getElementById("simpleCookieConsent").classList.add('hideThis');
         });
         document.getElementsByClassName("cookieConsentDeny")[0].addEventListener("click",function(){
-            //mandar a google
+          window.location.replace("https://google.com");
         });
     }
 }

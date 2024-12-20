@@ -298,6 +298,9 @@
   }
 }
 @media screen {
+  #juegos a {
+    text-decoration: none;
+  }
   .juego {
     box-shadow: 0em 0em 0.1em black;
     padding: 0.5em;
@@ -349,6 +352,9 @@
   footer #copy {
     color: #cccccc;
   }
+  footer p {
+    margin-bottom: 0.25em;
+  }
   #simpleCookieConsent {
     height: 100vh;
     width: 100vw;
@@ -387,5 +393,8 @@
   }
   #simpleCookieConsent a {
     display: inline;
+  }
+  .hideThis {
+    display: none;
   }
 }/*# sourceMappingURL=screen.css.map */

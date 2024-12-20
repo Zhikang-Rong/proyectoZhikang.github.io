@@ -14,4 +14,7 @@ footer{
     #copy{
         color: nth($highlight, 2);
     }
+    p{
+        margin-bottom: 0.25em;
+    }
 }
