@@ -56,6 +56,10 @@
     flex-direction: column;
     height: 100vh;
   }
+  body > a:first-child {
+    position: fixed;
+    right: 0;
+  }
   a {
     text-decoration: none;
     cursor: pointer;
