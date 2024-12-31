@@ -14,6 +14,7 @@
     <title>Tienda - Fallout: New Vegas</title>
 </head>
 <body>
+    <a href="#juego" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -42,7 +43,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="../generos.html">Géneros</a></li>
                     <li><a class="dropdown-item" href="../login.html">Login</a></li>
@@ -51,7 +52,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../../index.html'>Inicio</a></li>
                     <li><a href="../generos.html">Géneros</a></li>
                     <li><a href="../login.html">Login</a></li>
@@ -75,11 +76,11 @@
                         <td>22/10/2010</td>
                     </tr>
                 </table>
-                <p>Bienvenido a Las Vegas. New Vegas. ¡Disfruta de tu estancia!</p>
+                <p tabindex="0">Bienvenido a Las Vegas. New Vegas. ¡Disfruta de tu estancia!</p>
             </div>
             <div>
-                <button>Comprar</button>
-                <span>9.99€</span>
+                <span id="price">9.99€</span>
+                <button tabindex="0" id="buy" aria-labelledby="price buy">Comprar</button>
             </div>
         </div>
         <footer>
@@ -89,29 +90,6 @@
             <a href="https://www.facebook.com"><img src="../../assets/img/facebook.png" alt="facebook"></a>
             <a href="https://twitter.com"><img src="../../assets/img/twitter.png" alt="twitter"></a>
             
-            <form action="/enviar" method="post">
-                <table>   
-                    <tr>
-                        <td><label for="nombre">Nombre:</label></td>
-                        <td><input type="text" id="nombre" name="nombre"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Correo electrónico:</label></td>
-                        <td><input type="email" id="email" name="email"></td>
-                    </tr>
-                    <tr>
-                        <td><label for="mensaje">Mensaje:</label></td>
-                        <td><textarea id="mensaje" name="mensaje" rows="4"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2"><input id="politicas" type="checkbox" value="0">He leido y aceptado los <a href="#" target="_blank">Términos y Condiciones</a></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" id="submit" value="Enviar" ></td>
-                        <td><p id="sel"></p></td>
-                    </tr>
-                </table>
-            </form>
             <p id="copy">Ciudad Jardin 2023 &copy; Zhikang Rong</p>
             <a href="#" target="_blank">Política de Privacidad</a>
             <a href="#" target="_blank" rel="">Información legal</a>

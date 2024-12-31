@@ -14,6 +14,7 @@
     <title>Tienda - Dirt Rally 2.0</title>
 </head>
 <body>
+    <a href="#juego" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -42,7 +43,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="../generos.html">Géneros</a></li>
                     <li><a class="dropdown-item" href="../login.html">Login</a></li>
@@ -51,7 +52,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../../index.html'>Inicio</a></li>
                     <li><a href="../generos.html">Géneros</a></li>
                     <li><a href="../login.html">Login</a></li>
@@ -75,12 +76,12 @@
                         <td>26/2/2019</td>
                     </tr>
                 </table>
-                <p>DiRT Rally 2.0 te desafía a abrirte camino a través de una selección de carreras rally icónicas de todo el mundo, 
+                <p tabindex="0">DiRT Rally 2.0 te desafía a abrirte camino a través de una selección de carreras rally icónicas de todo el mundo, 
                     en los vehículos todoterreno más potentes jamás fabricados, sabiendo que el más mínimo error podría acabar contigo.</p>
             </div>
             <div>
-                <button>Comprar</button>
-                <span>29.99€</span>
+                <span id="price">29.99€</span>
+                <button tabindex="0" id="buy" aria-labelledby="price buy">Comprar</button>
             </div>
         </div>
         <footer>

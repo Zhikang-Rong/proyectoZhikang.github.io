@@ -14,6 +14,7 @@
     <title>Tienda - Login</title>
 </head>
 <body>
+    <a href="#login" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -42,7 +43,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="generos.html">Géneros</a></li>
                     <li><a class="dropdown-item active" href="login.html">Login</a></li>
@@ -51,7 +52,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../index.html'>Inicio</a></li>
                     <li><a href="generos.html">Géneros</a></li>
                     <li class="aqui"><a href="login.html">Login</a></li>
@@ -66,18 +67,18 @@
             <form action="/enviar" method="post">
                 <table>
                     <tr>
-                        <td><label for="user">Usuario:</label></td>
-                        <td><input type="text" id="user" name="user"></td>
+                        <td><label for="user" id="userLbl">Usuario:</label></td>
+                        <td><input type="text" id="user" name="user" tabindex="0" aria-labelledby="userLbl user"></td>
                     </tr>
                     <tr>
-                        <td><label for="pass">Contraseña:</label></td>
-                        <td><input type="password" id="pass" name="pass"></td>
+                        <td><label for="pass" id="passLbl">Contraseña:</label></td>
+                        <td><input type="password" id="pass" name="pass" tabindex="0" aria-labelledby="passLbl pass"></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input id="remember" type="checkbox" value="0">Recordar usuario</td>
+                        <td colspan="2"><input id="remember" type="checkbox" value="0" tabindex="0" >Recordar usuario</td>
                     </tr>
                     <tr>
-                        <td><input type="submit" id="log" value="Login" ></td>
+                        <td><input type="submit" id="log" value="Login" tabindex="0" ></td>
                         <td></td>
                     </tr>
                 </table>

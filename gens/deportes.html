@@ -15,6 +15,7 @@
 
 </head>
 <body>
+    <a href="#standard" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -43,7 +44,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="generos.html">Géneros</a></li>
                     <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -52,7 +53,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../index.html'>Inicio</a></li>
                     <li><a href="generos.html">Géneros</a></li>
                     <li><a href="login.html">Login</a></li>
@@ -65,7 +66,7 @@
         <main id="standard">
             <aside>
                 <h2>Géneros</h2>
-                <ul>
+                <ul role="menu">
                     <li><a href="shooter.html" target="_self">Shooter</a></li>
                     <li><a href="racing.html" target="_self">Racing</a></li>
                     <li><a href="deportes.html" target="_self">Deportes</a></li>
@@ -75,7 +76,7 @@
             <article>
                 <h2>Juegos</h2>
                 <div id="juegos">
-                    <a href="juegos/fifa23.html" target="_self">
+                    <a href="juegos/fifa23.html" target="_self" tabindex="0" >
                         <div class="juego">
                             <img src="../assets/img/fifa23.jpg" alt="Fifa 23">
                             <h3>Fifa 23</h3>

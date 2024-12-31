@@ -14,6 +14,7 @@
     <title>Tienda - Team Fortress 2</title>
 </head>
 <body>
+    <a href="#juego" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -42,7 +43,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="../generos.html">Géneros</a></li>
                     <li><a class="dropdown-item" href="../login.html">Login</a></li>
@@ -51,7 +52,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../../index.html'>Inicio</a></li>
                     <li><a href="../generos.html">Géneros</a></li>
                     <li><a href="../login.html">Login</a></li>
@@ -75,12 +76,12 @@
                         <td>10/10/2007</td>
                     </tr>
                 </table>
-                <p>Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades. 
+                <p tabindex="0">Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades. 
                     Constantemente actuaizado con nuevos modos de juego, mapas, equipamiento y, lo más importante, ¡sombreros!</p>
             </div>
             <div>
-                <button>Comprar</button>
-                <span>Gratis</span>
+                <span id="price">Gratis</span>
+                <button tabindex="0" id="buy" aria-labelledby="price buy">Comprar</button>
             </div>
         </div>
         <footer>

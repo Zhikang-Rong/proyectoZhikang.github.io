@@ -14,6 +14,7 @@
     <title>Tienda - Titanfall 2</title>
 </head>
 <body>
+    <a href="#juego" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -42,7 +43,7 @@
         <nav>
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
                     <li><a class="dropdown-item" href='../../index.html'>Inicio</a></li>
                     <li><a class="dropdown-item" href="../generos.html">Géneros</a></li>
                     <li><a class="dropdown-item" href="../login.html">Login</a></li>
@@ -51,7 +52,7 @@
             </div>
             
             <div id='menu_desk'>
-                <ul >
+                <ul role="menu">
                     <li><a href='../../index.html'>Inicio</a></li>
                     <li><a href="../generos.html">Géneros</a></li>
                     <li><a href="../login.html">Login</a></li>
@@ -75,13 +76,13 @@
                         <td>28/10/2016</td>
                     </tr>
                 </table>
-                <p>Respawn Entertainment te ofrece la tecnología de titanes más avanzada en su nueva campaña para un jugador y experiencia multijugador. 
+                <p tabindex="0">Respawn Entertainment te ofrece la tecnología de titanes más avanzada en su nueva campaña para un jugador y experiencia multijugador. 
                     Combina y conquista con nuevos titanes y pilotos, armas más letales y sistemas de personalización y progresión que te ayudarán a ti y a tu titán 
                     a fluir como una fuerza imparable.</p>
             </div>
             <div>
-                <button>Comprar</button>
-                <span>19.99€</span>
+                <span id="price">19.99€</span>
+                <button tabindex="0" id="buy" aria-labelledby="price buy">Comprar</button>
             </div>
         </div>
         <footer>

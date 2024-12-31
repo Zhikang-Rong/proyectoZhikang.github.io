@@ -15,6 +15,7 @@
     <title>Tienda - Login</title>
 </head>
 <body>
+    <a href="#login" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -67,22 +68,22 @@
             <form action="/enviar" method="post">
                 <table>   
                     <tr>
-                        <td><label for="nombre">Nombre:</label></td>
-                        <td><input type="text" id="nombre" name="nombre"></td>
+                        <td><label for="name" id="nameLbl">Nombre:</label></td>
+                        <td><input type="text" id="name" name="name" tabindex="0" aria-labelledby="nameLbl name"></td>
                     </tr>
                     <tr>
-                        <td><label for="email">Correo electrónico:</label></td>
-                        <td><input type="email" id="email" name="email"></td>
+                        <td><label for="email" id="emailLbl">Correo electrónico:</label></td>
+                        <td><input type="email" id="email" name="email" tabindex="0" aria-labelledby="emailLbl email"></td>
                     </tr>
                     <tr>
-                        <td><label for="mensaje">Mensaje:</label></td>
-                        <td><textarea id="mensaje" name="mensaje" rows="4"></textarea></td>
+                        <td><label for="mensaje" id="mensajeLbl">Mensaje:</label></td>
+                        <td><textarea id="mensaje" name="mensaje" rows="4" tabindex="0" aria-labelledby="mensajeLbl mensaje"></textarea></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input id="politicas" type="checkbox" value="0">He leido y aceptado los <a href="#">Términos y Condiciones</a></td>
+                        <td colspan="2"><input id="politicas" type="checkbox" value="0" tabindex="0" >He leido y aceptado los <a href="#">Términos y Condiciones</a></td>
                     </tr>
                     <tr>
-                        <td><input type="submit" id="submit" value="Enviar" ></td>
+                        <td><input type="submit" id="submit" value="Enviar" tabindex="0" ></td>
                         <td><p id="sel"></p></td>
                     </tr>
                 </table>
