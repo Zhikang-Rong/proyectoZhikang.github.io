@@ -44,20 +44,20 @@
         <nav >
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href='../index.html'>Inicio</a></li>
-                    <li><a class="dropdown-item" href="generos.html">Géneros</a></li>
-                    <li><a class="dropdown-item" href="login.html">Login</a></li>
-                    <li><a class="dropdown-item active" href="contacto.html" >Contacto</a></li>
+                <ul class="dropdown-menu dropdown-menu-dark" role="menu">
+                    <li><a class="dropdown-item" href='../index.html' role="menuitem">Inicio</a></li>
+                    <li><a class="dropdown-item" href="generos.html" role="menuitem">Géneros</a></li>
+                    <li><a class="dropdown-item" href="login.html" role="menuitem">Login</a></li>
+                    <li><a class="dropdown-item active" href="contacto.html" role="menuitem">Contacto</a></li>
                 </ul>
             </div>
             
             <div id='menu_desk'>
-                <ul >
-                    <li><a href='../index.html'>Inicio</a></li>
-                    <li><a href="generos.html">Géneros</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li class="aqui"><a href="contacto.html">Contacto</a></li>
+                <ul role="menubar">
+                    <li><a href='../index.html' role="menuitem">Inicio</a></li>
+                    <li><a href="generos.html" role="menuitem">Géneros</a></li>
+                    <li><a href="login.html" role="menuitem">Login</a></li>
+                    <li class="aqui"><a href="contacto.html" role="menuitem">Contacto</a></li>
                 </ul>
             </div>
             
@@ -80,7 +80,8 @@
                         <td><textarea id="mensaje" name="mensaje" rows="4" tabindex="0" aria-labelledby="mensajeLbl mensaje"></textarea></td>
                     </tr>
                     <tr>
-                        <td colspan="2"><input id="politicas" type="checkbox" value="0" tabindex="0" >He leido y aceptado los <a href="#">Términos y Condiciones</a></td>
+                        <td><input id="politicas" name="politicas" type="checkbox" value="0" tabindex="0" aria-labelledby="politicas politicasLbl"></td>
+                        <td><label for="politicas" id="politicasLbl">He leido y aceptado los <a href="#">Términos y Condiciones</a></label></td>
                     </tr>
                     <tr>
                         <td><input type="submit" id="submit" value="Enviar" tabindex="0" ></td>
