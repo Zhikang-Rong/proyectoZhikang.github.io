@@ -6,6 +6,7 @@ window.onload = function(){
   
   if (localStorage.theme === null) {
     localStorage.setItem("theme", "light");
+    console.log("theme");
   };
   document.getElementsByTagName("main")[0].className = localStorage.theme;
   document.getElementById("theme-change-light").addEventListener("click",function(){
