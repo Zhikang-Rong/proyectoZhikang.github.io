@@ -31,7 +31,9 @@ article {
     padding: .5em;
 }
 
-
+.skip-to-main-content-link{
+    color: nth($list: $textColor, $n: 2);
+}
 
 @include tablet{
     #standard{

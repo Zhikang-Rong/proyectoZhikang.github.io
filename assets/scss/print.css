@@ -29,6 +29,9 @@
   article {
     padding: 0.5em;
   }
+  .skip-to-main-content-link {
+    color: white;
+  }
   /*generos.html*/
   /*contacto.html*/
   /* login.html*/
@@ -47,9 +50,6 @@
     background-color: #0d0d0d;
     color: white;
     padding: 0.5em 0.5em 0em 0.5em;
-  }
-  header .skip-to-main-content-link {
-    color: white;
   }
   header #titulo {
     display: flex;

@@ -2,9 +2,7 @@ header{
     background-color: nth($palette, 1);
     color: nth($textColor, 2);
     padding: .5em .5em 0em .5em;
-    .skip-to-main-content-link{
-        color: nth($list: $textColor, $n: 2);
-    }
+    
     #titulo{
         display: flex;
         align-items: center;
