@@ -6,20 +6,20 @@ window.onload = function(){
   
   if (localStorage.getItem("theme") === null) {
     localStorage.setItem("theme", "light");
-    console.log("theme");
+    console.log("themes");
   };
-  document.getElementsByTagName("main")[0].className = localStorage.theme;
+  document.getElementsByTagName("main")[0].className = localStorage.getItem("theme");
   document.getElementById("theme-change-light").addEventListener("click",function(){
     if (localStorage.theme !== "light") {
       localStorage.setItem("theme", "theme-light");
     };
-    document.getElementsByTagName("main")[0].className = localStorage.theme;
+    document.getElementsByTagName("main")[0].className = localStorage.getItem("theme");
   });
   document.getElementById("theme-change-dark").addEventListener("click",function(){
     if (localStorage.theme !== "dark") {
       localStorage.setItem("theme", "theme-dark");
     };
-    document.getElementsByTagName("main")[0].className = localStorage.theme;
+    document.getElementsByTagName("main")[0].className = localStorage.getItem("theme");
   });
 
     //TERMINOS Y CONDICIONES
