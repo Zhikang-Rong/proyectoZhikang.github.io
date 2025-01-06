@@ -4,7 +4,7 @@ window.onload = function(){
   }
 
   
-  if (localStorage.theme === "undefined") {
+  if (localStorage.theme === undefined) {
     localStorage.setItem("theme", "light");
   };
   document.getElementsByTagName("main")[0].className = localStorage.theme;
