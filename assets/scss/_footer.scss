@@ -8,8 +8,13 @@ footer{
         display: inline-block;
         width: auto;
         height: auto;
-        text-decoration: underline;
-        color:  #3366BB;
+        text-decoration: none;
+        color:  nth($list: $textColor, $n: 2);
+
+        &:hover{
+            color:  nth($list: $textColor, $n: 2);
+            text-decoration: underline;
+        }
     }
     #copy{
         color: nth($highlight, 2);

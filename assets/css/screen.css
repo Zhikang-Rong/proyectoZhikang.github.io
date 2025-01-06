@@ -186,30 +186,20 @@
 @media screen {
   aside {
     display: none;
-    border-right: solid #0d0d0d 0.01em;
   }
   aside ul {
     padding-left: 0;
   }
   aside ul li:has(a.aqui) {
-    background: #cccccc;
-    color: black;
     text-decoration: underline;
     font-weight: bold;
   }
   aside ul li:hover {
-    background: #cccccc;
     transition: all 0.5s ease-in;
   }
   aside ul li a {
-    color: black;
     text-decoration: underline;
     text-decoration-color: transparent;
-  }
-  aside ul li:hover a {
-    color: black;
-    text-decoration-color: black;
-    transition: all 0.5s ease-in;
   }
 }
 @media screen and (min-width: 400px) {
@@ -219,6 +209,50 @@
   }
 }
 @media screen {
+  .theme-light aside {
+    border-right: solid #0d0d0d 0.01em;
+  }
+  .theme-light aside ul {
+    padding-left: 0;
+  }
+  .theme-light aside ul li:has(a.aqui) {
+    background: #cccccc;
+    color: black;
+  }
+  .theme-light aside ul li:hover {
+    background: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light aside ul li a {
+    color: black;
+  }
+  .theme-light aside ul li:hover a {
+    color: black;
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark aside {
+    border-right: solid white 0.01em;
+  }
+  .theme-dark aside ul {
+    padding-left: 0;
+  }
+  .theme-dark aside ul li:has(a.aqui) {
+    background: #343a40;
+    color: white;
+  }
+  .theme-dark aside ul li:hover {
+    background: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark aside ul li a {
+    color: white;
+  }
+  .theme-dark aside ul li:hover a {
+    color: white;
+    text-decoration-color: white;
+    transition: all 0.5s ease-in;
+  }
   #generos {
     padding-top: 1.5em;
     padding: 0.5em;
@@ -228,17 +262,8 @@
     padding-left: 0;
   }
   #generos ul li a {
-    color: black;
     text-decoration: underline;
     text-decoration-color: transparent;
-  }
-  #generos ul li:hover {
-    background-color: #cccccc;
-    transition: all 0.5s ease-in;
-  }
-  #generos ul li:hover a {
-    text-decoration-color: black;
-    transition: all 0.5s ease-in;
   }
   form a {
     display: inline-block;
@@ -258,7 +283,6 @@
     flex: 1;
   }
   #juego {
-    background-color: white;
     flex: 1;
     padding: 0.5em;
     padding-top: 1.5em;
@@ -273,9 +297,7 @@
     width: 50%;
   }
   #juego button {
-    background-color: #343a40;
     border: 0;
-    color: white;
   }
 }
 @media screen and (min-width: 700px) {
@@ -309,22 +331,12 @@
     text-decoration: none;
   }
   .juego {
-    box-shadow: 0em 0em 0.1em black;
     padding: 0.5em;
-    color: black;
     border-radius: 0.25em;
   }
   .juego h3 {
     -webkit-text-decoration: solid underline transparent;
             text-decoration: solid underline transparent;
-  }
-  .juego:hover h3 {
-    text-decoration-color: black;
-    transition: all 0.5s ease-in;
-  }
-  .juego:hover {
-    background-color: #cccccc;
-    transition: all 0.5s ease-in;
   }
   .juego img {
     width: 100%;
@@ -342,6 +354,80 @@
   .juego .precio {
     text-align: right;
   }
+  .theme-light {
+    border-top: 0.01em black solid;
+    border-bottom: 0.01em black solid;
+    background-color: white;
+    color: black;
+  }
+  .theme-light .juego {
+    box-shadow: 0em 0em 0.1em black;
+    color: black;
+  }
+  .theme-light .juego:hover h3 {
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light .juego:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light#juego {
+    background-color: white;
+  }
+  .theme-light#juego button {
+    background-color: #343a40;
+    color: white;
+  }
+  .theme-light#generos ul li a {
+    color: black;
+  }
+  .theme-light#generos ul li:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light#generos ul li:hover a {
+    text-decoration-color: black;
+    color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark {
+    border-top: 0.01em white solid;
+    border-bottom: 0.01em white solid;
+    background-color: #0d0d0d;
+    color: white;
+  }
+  .theme-dark .juego {
+    box-shadow: 0em 0em 0.1em white;
+    color: white;
+  }
+  .theme-dark .juego:hover h3 {
+    text-decoration-color: white;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark .juego:hover {
+    background-color: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark#juego {
+    background-color: #0d0d0d;
+  }
+  .theme-dark#juego button {
+    background-color: #cccccc;
+    color: black;
+  }
+  .theme-dark#generos ul li a {
+    color: white;
+  }
+  .theme-dark#generos ul li:hover {
+    background-color: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark#generos ul li:hover a {
+    text-decoration-color: white;
+    color: white;
+    transition: all 0.5s ease-in;
+  }
   footer {
     background-color: #0d0d0d;
     color: white;
@@ -353,8 +439,12 @@
     display: inline-block;
     width: auto;
     height: auto;
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: white;
     text-decoration: underline;
-    color: #3366BB;
   }
   footer #copy {
     color: #cccccc;

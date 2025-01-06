@@ -7,19 +7,9 @@
         padding-left: 0;
         li{
             & a{
-                color: nth($textColor, 1);
                 text-decoration: underline;
                 text-decoration-color: transparent;
             }
-            &:hover{
-                background-color: nth($highlight, 2);
-                transition: all .5s ease-in;
-            }
-            &:hover a{
-                text-decoration-color: nth($textColor, 1);
-                transition: all .5s ease-in;
-            }
-            
         }
     }
     
@@ -51,7 +41,6 @@ form a{
 
 /* juego */
 #juego{
-    background-color: nth($palette, 2);
     flex: 1;
     padding: .5em;
     padding-top: 1.5em;
@@ -65,9 +54,7 @@ form a{
         width: 50%;
     }
     button{
-        background-color: nth($highlight, 1);
         border: 0;
-        color: nth($textColor,2);
     }
     @include desktop{
         grid-template-columns: 2fr 1fr;
@@ -96,22 +83,10 @@ form a{
     }
 }
 .juego {
-    box-shadow: 0em 0em .1em black;
     padding: .5em;
-    color: nth($textColor, 1);
     border-radius: .25em;
-
     h3{
         text-decoration: solid underline transparent;
-    }
-    &:hover h3{
-        text-decoration-color: nth($textColor, 1);
-        transition: all .5s ease-in;
-    }
-    &:hover{
-        background-color: nth($highlight, 2);
-        transition: all .5s ease-in;
-        
     }
     img{
         width: 100%;
@@ -124,5 +99,100 @@ form a{
     }
     .precio {
         text-align: right;
+    }
+}
+
+
+.theme-light{
+    border-top: .01em nth($textColor,1) solid;
+    border-bottom: .01em nth($textColor,1) solid;
+    background-color: nth($palette, 2);
+    color: nth($textColor,1);
+    .juego {
+        box-shadow: 0em 0em .1em nth($textColor,1);
+        color: nth($textColor, 1);
+        &:hover h3{
+            text-decoration-color: nth($textColor, 1);
+            transition: all .5s ease-in;
+        }
+        &:hover{
+            background-color: nth($highlight, 2);
+            transition: all .5s ease-in;
+        }
+    }
+
+    &#juego{
+        background-color: nth($palette, 2);
+        button{
+            background-color: nth($highlight, 1);
+            color: nth($textColor,2);
+        }
+    }
+
+    &#generos {
+        ul{
+            li{
+                a{
+                    color: nth($textColor, 1);
+                }
+                &:hover{
+                    background-color: nth($highlight, 2);
+                    transition: all .5s ease-in;
+                }
+                &:hover a{
+                    text-decoration-color: nth($textColor, 1);
+                    color: nth($textColor, 1);
+                    transition: all .5s ease-in;
+                }
+            }
+        }
+        
+    }
+}
+.theme-dark{
+    border-top: .01em nth($textColor,2) solid;
+    border-bottom: .01em nth($textColor,2) solid;
+    background-color: nth($palette, 1);
+    color: nth($textColor, 2);
+    .juego {
+        box-shadow: 0em 0em .1em nth($textColor,2);
+        color: nth($textColor, 2);
+        &:hover h3{
+            text-decoration-color: nth($textColor, 2);
+            transition: all .5s ease-in;
+        }
+        &:hover{
+            background-color: nth($highlight, 1);
+            transition: all .5s ease-in;
+        }
+    }
+
+    &#juego{
+        background-color: nth($palette, 1);
+        button{
+            background-color: nth($highlight, 2);
+            color: nth($textColor,1);
+        }
+        
+    }
+
+    &#generos {
+        ul{
+            li{
+                a{
+                    color: nth($textColor, 2);
+                }
+                &:hover{
+                    background-color: nth($highlight, 1);
+                    transition: all .5s ease-in;
+                }
+                &:hover a{
+                    text-decoration-color: nth($textColor, 2);
+                    color: nth($textColor, 2);
+                    transition: all .5s ease-in;
+                }
+            }
+        }
+        
     }
 }

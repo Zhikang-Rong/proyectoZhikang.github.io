@@ -3,6 +3,24 @@ window.onload = function(){
     checkCookie();
   }
 
+  
+  if (localStorage.theme === "undefined") {
+    localStorage.setItem("theme", "light");
+  };
+  document.getElementsByTagName("main")[0].className = localStorage.theme;
+  document.getElementById("theme-change-light").addEventListener("click",function(){
+    if (localStorage.theme !== "light") {
+      localStorage.setItem("theme", "theme-light");
+    };
+    document.getElementsByTagName("main")[0].className = localStorage.theme;
+  });
+  document.getElementById("theme-change-dark").addEventListener("click",function(){
+    if (localStorage.theme !== "dark") {
+      localStorage.setItem("theme", "theme-dark");
+    };
+    document.getElementsByTagName("main")[0].className = localStorage.theme;
+  });
+
     //TERMINOS Y CONDICIONES
     
     if(document.getElementById("submit") != null){
