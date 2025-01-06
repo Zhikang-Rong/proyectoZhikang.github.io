@@ -48,6 +48,9 @@
     color: white;
     padding: 0.5em 0.5em 0em 0.5em;
   }
+  header .skip-to-main-content-link {
+    color: white;
+  }
   header #titulo {
     display: flex;
     align-items: center;
