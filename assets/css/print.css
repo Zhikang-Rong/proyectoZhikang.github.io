@@ -32,8 +32,10 @@
   .skip-to-main-content-link {
     color: white;
     text-decoration: none;
+    background-color: #0d0d0d;
   }
   .skip-to-main-content-link:hover {
+    background-color: #0d0d0d;
     color: white;
     text-decoration: underline;
   }
