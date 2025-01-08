@@ -1,4 +1,4 @@
-window.onload = function(){
+function general(){
   if(document.getElementById("simpleCookieConsent") != null){
     checkCookie();
   }

@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "name":"Team Fortress 2",
+        "price":0,
+        "genero":"shooter",
+        "developer":"Valve",
+        "launch":"2007-10-10",
+        "image":"tf2.jpg",
+        "description":"Nueve clases diferentes ofrecen una amplia variedad de habilidades tácticas y personalidades. Constantemente actuaizado con nuevos modos de juego, mapas, equipamiento y, lo más importante, ¡sombreros!"
+    },
+    {
+        "id":2,
+        "name":"Titanfall 2",
+        "price":19.99,
+        "genero":"shooter",
+        "developer":"Respawn Entertainment",
+        "launch":"2016-10-28",
+        "image":"titanfall2.jpg",
+        "description":"Respawn Entertainment te ofrece la tecnología de titanes más avanzada en su nueva campaña para un jugador y experiencia multijugador. Combina y conquista con nuevos titanes y pilotos, armas más letales y sistemas de personalización y progresión que te ayudarán a ti y a tu titán a fluir como una fuerza imparable."
+    },
+    {
+        "id":3,
+        "name":"Left 4 Dead 2",
+        "price":14.99,
+        "genero":"shooter",
+        "developer":"Valve",
+        "launch":"2009-11-17",
+        "image":"Left4Dead2.jpg",
+        "description":"Ambientado en el apocalipsis zombi, Left 4 Dead 2(L4D2) es la esperadísima secuela del galardonado Left 4 Dead, el juego cooperativo número 1 de 2008.Este FPS cooperativo de acción y terror os llevará a ti y a tus amigos por las ciudades, pantanos y cementerios del Sur Profundo, desde Savannah hasta Nueva Orleans, a lo largo de cinco extensas campañas."
+    },
+    {
+        "id":4,
+        "name":"Fallout: New Vegas",
+        "price":9.99,
+        "genero":"rpg",
+        "developer":"Obsidian Entertainment",
+        "launch":"2010-10-22",
+        "image":"FNV.jpg",
+        "description":"Bienvenido a Las Vegas. New Vegas. ¡Disfruta de tu estancia!"
+    },
+    {
+        "id":5,
+        "name":"Dirt Rally 2.0",
+        "price":29.99,
+        "genero":"racing",
+        "developer":"Codemasters",
+        "launch":"2019-2-26",
+        "image":"dirt.jpg",
+        "description":"DiRT Rally 2.0 te desafía a abrirte camino a través de una selección de carreras rally icónicas de todo el mundo, en los vehículos todoterreno más potentes jamás fabricados, sabiendo que el más mínimo error podría acabar contigo."
+    },
+    {
+        "id":6,
+        "name":"FIFA 23",
+        "price":59.99,
+        "genero":"deportes",
+        "developer":"Valve",
+        "launch":"",
+        "image":"fifa23.jpg",
+        "description":""
+        }
+]

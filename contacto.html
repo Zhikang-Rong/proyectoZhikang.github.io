@@ -2,20 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/screen.css" media="screen" type="text/css">
-    <link rel="stylesheet" href="assets/css/print.css" media="print" type="text/css">
-    <link rel="icon" type="image/x-icon" href="assets/img/Steam_logo.png">
-    <meta name="description" content="Pagina principal de STEAM">
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/get.js"></script>
+    <link rel="stylesheet" href="../assets/css/screen.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="../assets/css/print.css" media="print" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Zhikang Rong">
+    <link rel="icon" type="image/x-icon" href="../assets/img/Steam_logo.png">
+    <meta name="description" content="Contacto">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <meta name="author" content="Zhikang Rong">
-    <title>Tienda - Inicio</title>
-
+    
+    <script src="assets/js/app.js"></script>
+    <title>Tienda - Login</title>
 </head>
 <body>
+    <a href="#login" class="skip-to-main-content-link">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -41,45 +41,56 @@
         <div id="titulo">
             <img id="logo" src="assets/img/Steam_logo.png" alt="steam"><a href='index.html'><h1>Tienda</h1></a>
         </div>
-        <nav>
+        <nav >
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
                 <ul class="dropdown-menu dropdown-menu-dark" role="menu">
-                    <li role="menuitem"><a class="dropdown-item active" href='index.html'>Inicio</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href='index.html'>Inicio</a></li>
                     <li role="menuitem"><a class="dropdown-item" href="generos.html">Géneros</a></li>
                     <li role="menuitem"><a class="dropdown-item" href="login.html">Login</a></li>
-                    <li role="menuitem"><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                    <li role="menuitem"><a class="dropdown-item active" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
             
             <div id='menu_desk'>
                 <ul role="menubar">
-                    <li class="aqui" role="menuitem"><a href='index.html'>Inicio</a></li>
+                    <li role="menuitem"><a href='index.html'>Inicio</a></li>
                     <li role="menuitem"><a href="generos.html">Géneros</a></li>
                     <li role="menuitem"><a href="login.html">Login</a></li>
-                    <li role="menuitem"><a href="contacto.html">Contacto</a></li>
+                    <li class="aqui" role="menuitem"><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
             
         </nav>
     </header>
-        <main id="standard">
-            <aside>
-                <h2>Géneros</h2>
-                <ul role="menubar">
-                    <li role="menuitem"><a href="index.html?genero=shooter" target="_self">Shooter</a></li>
-                    <li role="menuitem"><a href="index.html?genero=racing" target="_self">Racing</a></li>
-                    <li role="menuitem"><a href="index.html?genero=deportes" target="_self">Deportes</a></li>
-                    <li role="menuitem"><a href="index.html?genero=rpg" target="_self">RPG</a></li>
-                </ul>
-            </aside>
-            <article>
-                <h2>Juegos</h2>
-                <div id="juegos">
-            
-                </div>
-            </article>
+        <main id="login">
+            <h2>Formulario de contacto</h2>
+            <form action="/enviar" method="post">
+                <table>   
+                    <tr>
+                        <td><label for="name" id="nameLbl">Nombre:</label></td>
+                        <td><input type="text" id="name" name="name" tabindex="0" aria-labelledby="nameLbl name"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email" id="emailLbl">Correo electrónico:</label></td>
+                        <td><input type="email" id="email" name="email" tabindex="0" aria-labelledby="emailLbl email"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mensaje" id="mensajeLbl">Mensaje:</label></td>
+                        <td><textarea id="mensaje" name="mensaje" rows="4" tabindex="0" aria-labelledby="mensajeLbl mensaje"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input id="politicas" name="politicas" type="checkbox" value="0" tabindex="0" aria-labelledby="politicas politicasLbl"></td>
+                        <td><label for="politicas" id="politicasLbl">He leido y aceptado los <a href="#">Términos y Condiciones</a></label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" id="submit" value="Enviar" tabindex="0" ></td>
+                        <td><p id="sel"></p></td>
+                    </tr>
+                </table>
+            </form>
         </main>
+
         <footer>
             <p>Correo Electrónico: zhikang.ro@gmail.com</p>
             <p>Teléfono: +64 633187969</p>
@@ -87,12 +98,10 @@
             <a href="https://twitter.com"><img src="assets/img/twitter.png" alt="twitter"></a><br>
             <a href='#' id="theme-change-light">Tema claro</a>
             <a href='#' id="theme-change-dark">Tema oscuro</a>
-            <p id="copy">Ciudad Jardin 2023 &copy; Zhikang Rong </p>
+            <p id="copy">Ciudad Jardin 2023 &copy; Zhikang Rong</p>
         </footer>
-    
 </body>
 <script>
     general();
-    fetchJSONData(); 
 </script>
 </html>
