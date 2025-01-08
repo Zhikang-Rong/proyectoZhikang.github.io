@@ -34,7 +34,9 @@ article {
 .skip-to-main-content-link{
     color: nth($list: $textColor, $n: 2);
     text-decoration: none;
+    background-color: nth($palette, 1);
     &:hover{
+        background-color: nth($palette, 1);
         color: nth($list: $textColor, $n: 2);
         text-decoration: underline;
     }
