@@ -140,10 +140,6 @@
   aside ul {
     padding-left: 0;
   }
-  aside ul li:has(a.aqui) {
-    text-decoration: underline;
-    font-weight: bold;
-  }
   aside ul li:hover {
     transition: all 0.5s ease-in;
   }
@@ -165,10 +161,6 @@
   .theme-light aside ul {
     padding-left: 0;
   }
-  .theme-light aside ul li:has(a.aqui) {
-    background: #cccccc;
-    color: black;
-  }
   .theme-light aside ul li:hover {
     background: #cccccc;
     transition: all 0.5s ease-in;
@@ -186,10 +178,6 @@
   }
   .theme-dark aside ul {
     padding-left: 0;
-  }
-  .theme-dark aside ul li:has(a.aqui) {
-    background: #343a40;
-    color: white;
   }
   .theme-dark aside ul li:hover {
     background: #343a40;
@@ -381,6 +369,7 @@
   footer {
     background-color: #0d0d0d;
     color: white;
+    padding: 0.5em;
   }
   footer img {
     max-width: 3em;

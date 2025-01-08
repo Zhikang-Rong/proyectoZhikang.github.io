@@ -1,6 +1,7 @@
 footer{
     background-color: nth($palette, 1);
     color: nth($textColor, 2);
+    padding: .5em;
     img{
         max-width: 3em;
     }
