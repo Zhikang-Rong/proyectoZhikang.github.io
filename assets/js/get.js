@@ -21,7 +21,7 @@ function fetchJSONData() {
                         if(game.genero === urlParams.get("genero")){
                             content +="<a href='juego.html?gameId="+game.id+"' target='_self' tabindex='0'>";
                             content +="<div class='juego'>";
-                            content +="<img src='assets/img/"+game.image+"' alt='"+game.name+"'>";
+                            content +="<img src='assets/img/"+game.image+"' alt=''>";
                             content +="<h3>"+game.name+"</h3>";             
                             if(game.price == 0){
                                 content +="<p class='precio'>Gratis</p>";
@@ -59,7 +59,7 @@ function fetchJSONData() {
                         found = true;
                         content += "<img src='assets/img/"+game.image+"' alt='"+game.name+"'>";
                         content += "<div>";
-                        content += "<h2>"+game.name+"</h2>";
+                        content += "<h2 tabindex='0'>"+game.name+"</h2>";
                         content += "<table>";
                         content += "<tr>";
                         content += "<td>Desarrollador</td>";
@@ -74,9 +74,9 @@ function fetchJSONData() {
                         content += "</div>";
                         content += "<div>";
                         if(game.price == 0){
-                            content +="<span class='price'>Gratis</span>";
+                            content +="<span class='price' tabindex='0'>Gratis</span>";
                         }else{
-                            content +="<span class='price'>"+game.price+"€</span>";
+                            content +="<span class='price' tabindex='0'>"+game.price+"€</span>";
                         }
                         content += "<button tabindex='0' id='buy' aria-labelledby='price buy'>Comprar</button>";
                         content += "</div>";

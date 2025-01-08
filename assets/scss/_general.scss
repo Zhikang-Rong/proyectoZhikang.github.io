@@ -33,6 +33,11 @@ article {
 
 .skip-to-main-content-link{
     color: nth($list: $textColor, $n: 2);
+    text-decoration: none;
+    &:hover{
+        color: nth($list: $textColor, $n: 2);
+        text-decoration: underline;
+    }
 }
 
 @include tablet{

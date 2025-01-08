@@ -81,6 +81,11 @@
   }
   .skip-to-main-content-link {
     color: white;
+    text-decoration: none;
+  }
+  .skip-to-main-content-link:hover {
+    color: white;
+    text-decoration: underline;
   }
   /*generos.html*/
   /*contacto.html*/

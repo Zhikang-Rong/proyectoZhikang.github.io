@@ -16,6 +16,7 @@
 
 </head>
 <body>
+    <a href="#juegos" class="skip-to-main-content-link" tabindex="0">Saltar al contenido principal</a>
     <div id="simpleCookieConsent" class="hideThis">
         <div class="cookieConsentContainer">
             <div class="cookieConsentNotice">
@@ -32,58 +33,58 @@
                 </p>
               </div>
           <div class="cookieConsentSelection">
-            <button value="false" class="cookieConsentDeny">Denegar</button>
-            <button value="true" class="cookieConsentAllow">Aceptar</button>
+            <button value="false" class="cookieConsentDeny" tabindex="0">Denegar</button>
+            <button value="true" class="cookieConsentAllow" tabindex="0">Aceptar</button>
           </div>
         </div>
     </div>
     <header>
         <div id="titulo">
-            <img id="logo" src="assets/img/Steam_logo.png" alt="steam"><a href='index.html'><h1>Tienda</h1></a>
+            <img id="logo" src="assets/img/Steam_logo.png" alt="logo"><a href='index.html'><h1>Tienda</h1></a>
         </div>
-        <nav>
+        <nav role="navigation">
             <div class="dropdown" id='menu_mov'>
                 <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">MENU</button>
                 <ul class="dropdown-menu dropdown-menu-dark" role="menu">
-                    <li role="menuitem"><a class="dropdown-item active" href='index.html'>Inicio</a></li>
-                    <li role="menuitem"><a class="dropdown-item" href="generos.html">Géneros</a></li>
-                    <li role="menuitem"><a class="dropdown-item" href="login.html">Login</a></li>
-                    <li role="menuitem"><a class="dropdown-item" href="contacto.html">Contacto</a></li>
+                    <li role="menuitem"><a class="dropdown-item active" href='index.html' tabindex="0">Inicio</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="generos.html" tabindex="0">Géneros</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="login.html" tabindex="0">Login</a></li>
+                    <li role="menuitem"><a class="dropdown-item" href="contacto.html" tabindex="0">Contacto</a></li>
                 </ul>
             </div>
             
             <div id='menu_desk'>
                 <ul role="menubar">
-                    <li class="aqui" role="menuitem"><a href='index.html'>Inicio</a></li>
-                    <li role="menuitem"><a href="generos.html">Géneros</a></li>
-                    <li role="menuitem"><a href="login.html">Login</a></li>
-                    <li role="menuitem"><a href="contacto.html">Contacto</a></li>
+                    <li class="aqui" role="menuitem"><a href='index.html' tabindex="0">Inicio</a></li>
+                    <li role="menuitem"><a href="generos.html" tabindex="0">Géneros</a></li>
+                    <li role="menuitem"><a href="login.html" tabindex="0">Login</a></li>
+                    <li role="menuitem"><a href="contacto.html" tabindex="0">Contacto</a></li>
                 </ul>
             </div>
             
         </nav>
     </header>
         <main id="standard">
-            <aside>
+            <aside role="complementary" aria-label="Géneros">
                 <h2>Géneros</h2>
                 <ul role="menubar">
-                    <li role="menuitem"><a href="index.html?genero=shooter" target="_self">Shooter</a></li>
-                    <li role="menuitem"><a href="index.html?genero=racing" target="_self">Racing</a></li>
-                    <li role="menuitem"><a href="index.html?genero=deportes" target="_self">Deportes</a></li>
-                    <li role="menuitem"><a href="index.html?genero=rpg" target="_self">RPG</a></li>
+                    <li role="menuitem"><a href="index.html?genero=shooter" target="_self" tabindex="0">Shooter</a></li>
+                    <li role="menuitem"><a href="index.html?genero=racing" target="_self" tabindex="0">Racing</a></li>
+                    <li role="menuitem"><a href="index.html?genero=deportes" target="_self" tabindex="0">Deportes</a></li>
+                    <li role="menuitem"><a href="index.html?genero=rpg" target="_self" tabindex="0">RPG</a></li>
                 </ul>
             </aside>
-            <article>
+            <article role="main" aria-label="Juegos">
                 <h2>Juegos</h2>
                 <div id="juegos">
             
                 </div>
             </article>
         </main>
-        <footer>
+        <footer role="contentinfo">
             <div class="btn-group" role="group" aria-label="Temas">
-                <button type="button" class="btn btn-secondary" id="theme-change-light">Tema claro</button>
-                <button type="button" class="btn btn-secondary" id="theme-change-dark">Tema oscuro</button>
+                <button role="button" type="button" class="btn btn-secondary" id="theme-change-light">Tema claro</button>
+                <button role="button" type="button" class="btn btn-secondary" id="theme-change-dark">Tema oscuro</button>
             </div>
             <p>Correo Electrónico: zhikang.ro@gmail.com</p>
             <p>Teléfono: +64 633187969</p>
