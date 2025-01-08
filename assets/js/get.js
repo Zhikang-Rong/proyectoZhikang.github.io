@@ -57,7 +57,7 @@ function fetchJSONData() {
                     }
                     if(game.id == urlParams.get("gameId")){
                         found = true;
-                        content += "<img src='../../assets/img/"+game.image+"' alt='"+game.name+"'>";
+                        content += "<img src='assets/img/"+game.image+"' alt='"+game.name+"'>";
                         content += "<div>";
                         content += "<h2>"+game.name+"</h2>";
                         content += "<table>";
