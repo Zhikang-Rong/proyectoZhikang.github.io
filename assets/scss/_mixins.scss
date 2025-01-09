@@ -1,0 +1,11 @@
+@mixin tablet {
+    @media (min-width: #{map-get($screens,medium)}) {
+        @content
+    }
+};
+
+@mixin desktop {
+    @media (min-width: #{map-get($screens,large)}) {
+        @content
+    }
+}

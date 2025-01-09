@@ -1,0 +1,404 @@
+@media print {
+  body {
+    font-family: arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  body > a:first-child {
+    position: fixed;
+    right: 0;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  li {
+    padding: 0.5em;
+  }
+  main {
+    flex: 1;
+    background-color: white;
+  }
+  article {
+    padding: 0.5em;
+  }
+  .skip-to-main-content-link {
+    color: white;
+    text-decoration: none;
+    background-color: #0d0d0d;
+  }
+  .skip-to-main-content-link:hover {
+    background-color: #0d0d0d;
+    color: white;
+    text-decoration: underline;
+  }
+  /*generos.html*/
+  /*contacto.html*/
+  /* login.html*/
+  /* juego */
+  /* index.html y juegos por genero*/
+}
+@media print and (min-width: 400px) {
+  #standard {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 0.5em;
+  }
+}
+@media print {
+  header {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5em 0.5em 0em 0.5em;
+  }
+  header #titulo {
+    display: flex;
+    align-items: center;
+  }
+  header #titulo h1 {
+    display: inline-block;
+    margin: 0.1em;
+    font-size: 300%;
+  }
+  header #titulo #logo {
+    width: 3.5em;
+    height: 3.5em;
+    display: inline-block;
+  }
+  header #titulo .logo {
+    animation-name: twitch;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  header #titulo .logo2 {
+    animation-name: flips;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  header #titulo a {
+    color: white;
+  }
+  header nav {
+    color: white;
+  }
+  header nav ul {
+    padding-left: 0;
+  }
+  header nav ul li {
+    padding: 0;
+    background-color: #343a40;
+  }
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.25rem 1rem;
+  }
+  header nav ul li a:hover {
+    color: white;
+    background-color: transparent;
+  }
+  header nav ul li:hover a {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: all 0.4s ease-in;
+  }
+  header nav ul li.aqui {
+    background-color: #0d6efd;
+  }
+  header #menu_mov button, header #menu_mov ul {
+    width: 100%;
+  }
+}
+@media print and (min-width: 400px) {
+  header #menu_mov {
+    display: none;
+  }
+}
+@media print {
+  header #menu_desk {
+    display: none;
+  }
+}
+@media print and (min-width: 400px) {
+  header #menu_desk {
+    display: block;
+  }
+}
+@media print and (min-width: 700px) {
+  header #menu_desk ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    gap: 0.2em;
+  }
+}
+@media print {
+  aside {
+    display: none;
+  }
+  aside ul {
+    padding-left: 0;
+  }
+  aside ul li:hover {
+    transition: all 0.5s ease-in;
+  }
+  aside ul li a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+}
+@media print and (min-width: 400px) {
+  aside {
+    padding: 0.5em;
+    display: block;
+  }
+}
+@media print {
+  .theme-light aside {
+    border-right: solid #0d0d0d 0.01em;
+  }
+  .theme-light aside ul {
+    padding-left: 0;
+  }
+  .theme-light aside ul li:hover {
+    background: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light aside ul li a {
+    color: black;
+  }
+  .theme-light aside ul li:hover a {
+    color: black;
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark aside {
+    border-right: solid white 0.01em;
+  }
+  .theme-dark aside ul {
+    padding-left: 0;
+  }
+  .theme-dark aside ul li:hover {
+    background: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark aside ul li a {
+    color: white;
+  }
+  .theme-dark aside ul li:hover a {
+    color: white;
+    text-decoration-color: white;
+    transition: all 0.5s ease-in;
+  }
+  #generos {
+    padding-top: 1.5em;
+    padding: 0.5em;
+    flex: 1;
+  }
+  #generos ul {
+    padding-left: 0;
+  }
+  #generos ul li a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+  }
+  form a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+    color: #3366BB;
+  }
+  #submit {
+    padding: 0.25em;
+    border: 0;
+    cursor: pointer;
+  }
+  #login {
+    padding: 0.5em;
+    padding-top: 1.5em;
+    flex: 1;
+  }
+  #juego {
+    flex: 1;
+    padding: 0.5em;
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+  }
+  #juego img {
+    width: 100%;
+  }
+  #juego table {
+    width: 50%;
+  }
+  #juego button {
+    border: 0;
+  }
+}
+@media print and (min-width: 700px) {
+  #juego {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+@media print {
+  #juegos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0.5em;
+  }
+}
+@media print and (min-width: 400px) {
+  #juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15em);
+    padding: 0.5em;
+  }
+}
+@media print and (min-width: 700px) {
+  #juegos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20em);
+    padding: 0.5em;
+  }
+}
+@media print {
+  #juegos a {
+    text-decoration: none;
+  }
+  .juego {
+    padding: 0.5em;
+    border-radius: 0.25em;
+  }
+  .juego h3 {
+    -webkit-text-decoration: solid underline transparent;
+            text-decoration: solid underline transparent;
+  }
+  .juego img {
+    width: 100%;
+  }
+}
+@media print and (min-width: 700px) {
+  .juego img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+}
+@media print {
+  .juego .precio {
+    text-align: right;
+  }
+  .theme-light {
+    border-top: 0.01em black solid;
+    border-bottom: 0.01em black solid;
+    background-color: white;
+    color: black;
+  }
+  .theme-light .juego {
+    box-shadow: 0em 0em 0.1em black;
+    color: black;
+  }
+  .theme-light .juego:hover h3 {
+    text-decoration-color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light .juego:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light#juego {
+    background-color: white;
+  }
+  .theme-light#juego button {
+    background-color: #343a40;
+    color: white;
+  }
+  .theme-light#generos ul li a {
+    color: black;
+  }
+  .theme-light#generos ul li:hover {
+    background-color: #cccccc;
+    transition: all 0.5s ease-in;
+  }
+  .theme-light#generos ul li:hover a {
+    text-decoration-color: black;
+    color: black;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark {
+    border-top: 0.01em white solid;
+    border-bottom: 0.01em white solid;
+    background-color: #0d0d0d;
+    color: white;
+  }
+  .theme-dark .juego {
+    box-shadow: 0em 0em 0.1em white;
+    color: white;
+  }
+  .theme-dark .juego:hover h3 {
+    text-decoration-color: white;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark .juego:hover {
+    background-color: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark#juego {
+    background-color: #0d0d0d;
+  }
+  .theme-dark#juego button {
+    background-color: #cccccc;
+    color: black;
+  }
+  .theme-dark#generos ul li a {
+    color: white;
+  }
+  .theme-dark#generos ul li:hover {
+    background-color: #343a40;
+    transition: all 0.5s ease-in;
+  }
+  .theme-dark#generos ul li:hover a {
+    text-decoration-color: white;
+    color: white;
+    transition: all 0.5s ease-in;
+  }
+  footer {
+    background-color: #0d0d0d;
+    color: white;
+    padding: 0.5em;
+  }
+  footer img {
+    max-width: 3em;
+  }
+  footer a {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    color: white;
+  }
+  footer a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  footer #copy {
+    color: #cccccc;
+  }
+  footer p {
+    margin-bottom: 0.25em;
+  }
+  #simpleCookieConsent {
+    display: none;
+  }
+}/*# sourceMappingURL=print.css.map */

@@ -1,0 +1,198 @@
+/*generos.html*/
+#generos {
+    padding-top: 1.5em;
+    padding: .5em;
+    flex: 1;
+    ul{
+        padding-left: 0;
+        li{
+            & a{
+                text-decoration: underline;
+                text-decoration-color: transparent;
+            }
+        }
+    }
+    
+}
+
+
+/*contacto.html*/
+form a{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-decoration: underline;
+    color:  #3366BB;
+}
+#submit{
+    padding: .25em;
+    border: 0;
+    cursor: pointer;
+}
+
+
+/* login.html*/
+#login{
+    padding: .5em;
+    padding-top: 1.5em;
+    flex: 1;
+}
+
+
+/* juego */
+#juego{
+    flex: 1;
+    padding: .5em;
+    padding-top: 1.5em;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 1em;
+    img{
+        width: 100%;
+    }
+    table{
+        width: 50%;
+    }
+    button{
+        border: 0;
+    }
+    @include desktop{
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+
+/* index.html y juegos por genero*/
+#juegos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: .5em;
+    @include tablet{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,15em);
+        padding: .5em;
+    }
+    @include desktop{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,20em);
+        padding: .5em;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.juego {
+    padding: .5em;
+    border-radius: .25em;
+    h3{
+        text-decoration: solid underline transparent;
+    }
+    img{
+        width: 100%;
+        @include desktop{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    }
+    .precio {
+        text-align: right;
+    }
+}
+
+
+.theme-light{
+    border-top: .01em nth($textColor,1) solid;
+    border-bottom: .01em nth($textColor,1) solid;
+    background-color: nth($palette, 2);
+    color: nth($textColor,1);
+    .juego {
+        box-shadow: 0em 0em .1em nth($textColor,1);
+        color: nth($textColor, 1);
+        &:hover h3{
+            text-decoration-color: nth($textColor, 1);
+            transition: all .5s ease-in;
+        }
+        &:hover{
+            background-color: nth($highlight, 2);
+            transition: all .5s ease-in;
+        }
+    }
+
+    &#juego{
+        background-color: nth($palette, 2);
+        button{
+            background-color: nth($highlight, 1);
+            color: nth($textColor,2);
+        }
+    }
+
+    &#generos {
+        ul{
+            li{
+                a{
+                    color: nth($textColor, 1);
+                }
+                &:hover{
+                    background-color: nth($highlight, 2);
+                    transition: all .5s ease-in;
+                }
+                &:hover a{
+                    text-decoration-color: nth($textColor, 1);
+                    color: nth($textColor, 1);
+                    transition: all .5s ease-in;
+                }
+            }
+        }
+        
+    }
+}
+.theme-dark{
+    border-top: .01em nth($textColor,2) solid;
+    border-bottom: .01em nth($textColor,2) solid;
+    background-color: nth($palette, 1);
+    color: nth($textColor, 2);
+    .juego {
+        box-shadow: 0em 0em .1em nth($textColor,2);
+        color: nth($textColor, 2);
+        &:hover h3{
+            text-decoration-color: nth($textColor, 2);
+            transition: all .5s ease-in;
+        }
+        &:hover{
+            background-color: nth($highlight, 1);
+            transition: all .5s ease-in;
+        }
+    }
+
+    &#juego{
+        background-color: nth($palette, 1);
+        button{
+            background-color: nth($highlight, 2);
+            color: nth($textColor,1);
+        }
+        
+    }
+
+    &#generos {
+        ul{
+            li{
+                a{
+                    color: nth($textColor, 2);
+                }
+                &:hover{
+                    background-color: nth($highlight, 1);
+                    transition: all .5s ease-in;
+                }
+                &:hover a{
+                    text-decoration-color: nth($textColor, 2);
+                    color: nth($textColor, 2);
+                    transition: all .5s ease-in;
+                }
+            }
+        }
+        
+    }
+}

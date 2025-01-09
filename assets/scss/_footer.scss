@@ -1,0 +1,26 @@
+footer{
+    background-color: nth($palette, 1);
+    color: nth($textColor, 2);
+    padding: .5em;
+    img{
+        max-width: 3em;
+    }
+    a{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        text-decoration: none;
+        color:  nth($list: $textColor, $n: 2);
+
+        &:hover{
+            color:  nth($list: $textColor, $n: 2);
+            text-decoration: underline;
+        }
+    }
+    #copy{
+        color: nth($highlight, 2);
+    }
+    p{
+        margin-bottom: 0.25em;
+    }
+}
