@@ -36,7 +36,7 @@ function fetchJSONData() {
                     for (const game of data) {
                         content +="<a href='juego.html?gameId="+game.id+"' target='_self' tabindex='0'>";
                         content +="<div class='juego'>";
-                        content +="<img src='assets/img/"+game.image+"' alt='"+game.name+"'>";
+                        content +="<img src='assets/img/"+game.image+"' alt=''>";
                         content +="<h3>"+game.name+"</h3>";
                         if(game.price == 0){
                             content +="<p class='precio'>Gratis</p>";
@@ -57,6 +57,7 @@ function fetchJSONData() {
                     }
                     if(game.id == urlParams.get("gameId")){
                         found = true;
+                        document.title = "Tienda - "+game.name;
                         content += "<img src='assets/img/"+game.image+"' alt='"+game.name+"'>";
                         content += "<div>";
                         content += "<h2 tabindex='0'>"+game.name+"</h2>";
