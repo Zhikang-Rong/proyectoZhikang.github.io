@@ -84,8 +84,7 @@ function getCookie(cname) {
 
 function checkCookie() {
     let cookie = getCookie("tienda");
-    console.log(cookie);
-    console.log(document.cookie);
+
     if (cookie !== "") {
         console.log("yes");
     } else {
