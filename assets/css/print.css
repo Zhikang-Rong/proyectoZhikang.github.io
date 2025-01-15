@@ -45,7 +45,7 @@
   /* juego */
   /* index.html y juegos por genero*/
 }
-@media print and (min-width: 400px) {
+@media print and (min-width: 500px) {
   #standard {
     display: grid;
     grid-template-columns: 1fr 6fr;
@@ -118,7 +118,7 @@
     width: 100%;
   }
 }
-@media print and (min-width: 400px) {
+@media print and (min-width: 500px) {
   header #menu_mov {
     display: none;
   }
@@ -128,12 +128,12 @@
     display: none;
   }
 }
-@media print and (min-width: 400px) {
+@media print and (min-width: 500px) {
   header #menu_desk {
     display: block;
   }
 }
-@media print and (min-width: 700px) {
+@media print and (min-width: 800px) {
   header #menu_desk ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, 15em);
@@ -155,7 +155,7 @@
     text-decoration-color: transparent;
   }
 }
-@media print and (min-width: 400px) {
+@media print and (min-width: 500px) {
   aside {
     padding: 0.5em;
     display: block;
@@ -245,7 +245,7 @@
     border: 0;
   }
 }
-@media print and (min-width: 700px) {
+@media print and (min-width: 800px) {
   #juego {
     grid-template-columns: 2fr 1fr;
   }
@@ -257,14 +257,14 @@
     gap: 0.5em;
   }
 }
-@media print and (min-width: 400px) {
+@media print and (min-width: 500px) {
   #juegos {
     display: grid;
     grid-template-columns: repeat(auto-fit, 15em);
     padding: 0.5em;
   }
 }
-@media print and (min-width: 700px) {
+@media print and (min-width: 800px) {
   #juegos {
     display: grid;
     grid-template-columns: repeat(auto-fit, 20em);
@@ -287,7 +287,7 @@
     width: 100%;
   }
 }
-@media print and (min-width: 700px) {
+@media print and (min-width: 800px) {
   .juego img {
     width: 100%;
     margin-left: auto;
