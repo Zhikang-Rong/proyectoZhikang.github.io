@@ -81,6 +81,8 @@ function fetchJSONData() {
                         }
                         content += "<button tabindex='0' id='buy' aria-labelledby='price buy'>Comprar</button>";
                         content += "</div>";
+                        document.querySelector('meta[property="og:image"]').setAttribute("content", "assets/img/"+game.image);
+                        document.querySelector('meta[property="og:title"]').setAttribute("content", "Tienda - "+game.name);
                     }
                 }
                 document.getElementById("juego").innerHTML += content;
