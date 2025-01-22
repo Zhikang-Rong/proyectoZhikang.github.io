@@ -8,50 +8,74 @@
 
 
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/index.html</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/generos.html</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/generos.html</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/login.html</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/login.html</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/contacto.html</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/contacto.html</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/?genero=shooter</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/index.html?genero=shooter</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/?genero=racing</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/index.html?genero=racing</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/?genero=deportes</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/index.html?genero=deportes</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/?genero=rpg</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://zhikang-rong.github.io/proyectoZhikang.github.io/index.html?genero=rpg</loc>
-  <lastmod>2025-01-15T13:11:17+00:00</lastmod>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=1</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=2</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=3</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=4</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=5</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://zhikang-rong.github.io/juego.html?gameId=6</loc>
+  <lastmod>2025-01-22T11:52:29+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
