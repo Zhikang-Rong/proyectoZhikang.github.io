@@ -33,29 +33,6 @@
   <loc>https://zhikang-rong.github.io/?genero=rpg</loc>
   <priority>0.80</priority>
 </url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=1</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=2</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=3</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=4</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=5</loc>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://zhikang-rong.github.io/juego.html?gameId=6</loc>
-  <priority>0.80</priority>
-</url>
+
 
 </urlset>
