@@ -1,4 +1,2 @@
 User-agent: *
 Disallow: /assets/
-
-Sitemap: https://zhikang-rong.github.io/sitemap.xml
