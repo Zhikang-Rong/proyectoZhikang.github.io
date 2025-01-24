@@ -487,6 +487,9 @@
   #simpleCookieConsent a {
     display: inline;
   }
+  #simpleCookieConsent .forTest {
+    display: none;
+  }
   .hideThis {
     display: none;
   }
